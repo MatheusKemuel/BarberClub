@@ -8,6 +8,11 @@
     color: var(--white);
 }
 
+.elemento::-webkit-scrollbar {
+  display: none;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -367,6 +372,14 @@ nav a {
     scroll-behavior: smooth;
 }
 
+.galery-pictures img {
+    transition: .3s;
+}
+
+.galery-pictures img:hover {
+    scale: 1.1;
+}
+
 .galery-pictures::-webkit-scrollbar {
     display: none;
 }
@@ -408,12 +421,12 @@ nav a {
 }
 
 .plans-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
 }
 
 .plans-card {
@@ -426,6 +439,7 @@ nav a {
     border: 1px solid var(--gray);
     border-radius: 5px;
     background-color: var(--dark-gray);
+    margin: 0 auto;
 }
 
 .card-top {
@@ -489,6 +503,7 @@ footer {
     align-items: center;
     gap: 30px;
     padding: 20px 10px;
+    
 }
 
 footer figure {
@@ -506,6 +521,7 @@ footer figure img {
     align-items: center;
     gap: 30px;
     margin-top: 30px;
+    
 }
 
 .footer-links a {
@@ -513,6 +529,7 @@ footer figure img {
     font-size: 24px;
     border-radius: 5px;
     padding: 5px;
+    color: var(--gray);
 
     &:hover {
         background-color: var(--white);
@@ -541,8 +558,12 @@ footer figure img {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    
 }
 
+.footer-bot p{
+    color: var(--gray);
+}
 
 
 
@@ -666,7 +687,7 @@ footer figure img {
 
     .services {
         flex-direction: row;
-        max-width: 1600px;
+        max-width: 1500px;
         margin: 50px auto;
     }
 
@@ -701,7 +722,7 @@ footer figure img {
     }
 
     .barbers {
-        max-width: 1600px;
+        max-width: 1500px;
         margin: 0 auto;
     }
 
@@ -715,14 +736,13 @@ footer figure img {
 
 
     .galery {
-        max-width: 1600px;
+        max-width: 1500px;
         margin: 0 auto;
     }
 
     .galery-pictures {
         width: 100%;
         justify-content: center;
-        margin-left: 20px;
         width: 100%;
         
     }
