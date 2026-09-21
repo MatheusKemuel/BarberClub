@@ -9,7 +9,7 @@
 }
 
 .elemento::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 
@@ -26,11 +26,9 @@ body {
 
 main {
     flex: 1;
+    padding: 0 5px;
 }
 
-a {
-    display: block;
-}
 
 
 
@@ -63,6 +61,15 @@ h3 {
     font-size: 30px;
     font-family: var(--font-title);
     font-weight: 500;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
 
 .text-gold {
@@ -218,288 +225,144 @@ nav a {
 
 
 
-.hero-figure {
-    width: 100%;
-    position: relative;
-    height: 80vh;
-    margin: 0 auto;
+
+.hero {
+    max-width: 1500px;
+    margin: 20px auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.hero-figure img {
+.hero-top {
+    width: 100%;
+}
+
+.hero-bot {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.hero-img-wrapper {
+    max-width: 1000px;
+    height: 500px;
+}
+
+.hero-img-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.dark-overlay {
-    position: absolute;
-    inset: 0;
-    background: #000000;
-    background: linear-gradient(180deg, rgba(0, 0, 0, .8) 90%, rgba(255, 255, 255, 0) 100%);
-    height: 100%;
-    width: 100%;
-}
-
-.hero-figure article {
-    position: absolute;
-    text-align: center;
-    top: 20px;
+.hero-texts {
+    max-width: 800px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding: 0 10px;
-    color: var(--text-2);
-    margin-top: 30px;
-}
-
-.hero-figure article h1 {
-    color: var(--white);
-}
-
-.hero-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-
-
-
-.services {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
-}
-
-.services figure {
-    width: 94vw;
-}
-
-.services figure img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.services-items {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 30px;
 
 }
 
-.text-icon {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    text-decoration: none;
-}
-
-.barbers {
-    padding: 0 10px;
-}
-
-.barbers-items {
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
-}
-
-.barbers-items a {
+.hero-texts p {
     font-size: 24px;
 }
 
 
-.barbers-cards {
+
+
+
+.before {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
-    max-width: 350px;
-    margin: 30px auto 0 auto;
+    gap: 12px;
 }
 
-.card {
-    width: 100%;
-    background-color: var(--dark-gray);
+.before::before {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: var(--gold);
     border-radius: 5px;
-    padding: 0 0 15px 0;
-
 }
 
-.card-img {
-    width: 100%;
-    padding: 5px;
+.services-nav {
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
-.card-img img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-}
-
-.card-items {
+.nav-wrapper {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 0 15px;
+    justify-content: space-between;
+    margin: 50px 0;
 }
 
+.services-menu {
+    width: 400px;
+    position: sticky;
+    height: 100%;
+    top: 100px;
+}
 
-.galery {
-    margin-top: 30px;
+.services-menu ul {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
 }
 
-.galery h2 {
-    margin-left: 15px;
-}
-
-.galery-pictures {
-    display: flex;
-    gap: 15px;
-    padding: 10px;
-    width: 100%;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
-}
-
-.galery-pictures img {
+.services-menu li a {
+    padding: 30px 10px;
     transition: .3s;
-}
-
-.galery-pictures img:hover {
-    scale: 1.1;
-}
-
-.galery-pictures::-webkit-scrollbar {
-    display: none;
-}
-
-.galery-bot {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.galery-bot a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    text-decoration: none;
-    transition: .3s;
+    width: 100%;
 
     &:hover {
-        gap: 10px;
+        background-color: var(--white);
+        color: var(--dark-gray);
+        scale: 1.1;
     }
 }
 
-.plans {
+.services-cards {
+    width: 50%;
+}
+
+
+.services-card {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 
-.plans-top {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
+.services-card figure {
+    max-width: 300px;
 }
 
-.plans-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    width: 100%;
-    max-width: 1000px;
-    margin: 30px auto;
-}
-
-.plans-card {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 250px;
-    min-height: 350px;
-    padding: 20px;
-    border: 1px solid var(--gray);
-    border-radius: 5px;
-    background-color: var(--dark-gray);
-    margin: 0 auto;
-}
-
-.card-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.card-mid {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 30px;
-}
-
-.plan-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-}
-
-.plan-item svg {
-    flex-shrink: 0;
-}
-
-.card-bot {
-    width: 100%;
-    margin-top: auto;
-    padding-top: 30px;
-}
-
-.card-bot .btn {
-    display: block;
-    width: 100%;
-}
-
-.plans figure {
-    width: 95%;
-    height: 500px;
-    margin: 0 auto;
-}
-
-.plans figure img {
+.services-card figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+.service-card-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 15px;
+    padding: 15px 10px;
+    justify-content: center;
+    width: 100%;
+}
 
 
 
 
 
-/* /////////////////////////FOOTER/////////////////////////// */
+
+
+
+
+
+
+
+/* ////////////////////////////////////////FOOTER//////////////////////////////////////// */
 footer {
     width: 100%;
     background-color: var(--dark-gray);
@@ -508,7 +371,7 @@ footer {
     align-items: center;
     gap: 30px;
     padding: 20px 10px;
-    
+
 }
 
 footer figure {
@@ -526,7 +389,7 @@ footer figure img {
     align-items: center;
     gap: 30px;
     margin-top: 30px;
-    
+
 }
 
 .footer-links a {
@@ -563,27 +426,14 @@ footer figure img {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    
+
 }
 
-.footer-bot p{
+.footer-bot p {
     color: var(--gray);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ////////////////////////////////////////FOOTER//////////////////////////////////////// */
 
 
 
@@ -657,98 +507,47 @@ footer figure img {
         flex-direction: row;
         justify-content: space-between;
     }
+}
 
-    .hero-figure {
-        width: 100%;
-        position: relative;
-        height: 70vh;
-        margin: 0 auto;
-        display: flex;
+@media (max-width:1020px) {
+    .hero-bot {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .services-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-menu {
+        display: none;
+    }
+
+    .nav-wrapper {
         justify-content: center;
     }
 
-    .hero-figure article {
-        position: absolute;
-        text-align: left;
-        top: 100px;
-        left: 170px;
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        padding: 0 10px;
-        color: var(--text-2);
-        margin-top: 30px;
-    }
+    
+}
 
-    .hero-figure article h1 {
-        font-size: 96px;
-    }
-
-    .hero-buttons {
-        flex-direction: row;
-    }
-
-
-
-    .services {
-        flex-direction: row;
-        max-width: 1500px;
+@media (max-width: 550px) {
+    .services-card {
+        min-width: 300px;
         margin: 50px auto;
     }
 
-    .services figure {
-        max-width: 800px;
-    }
-
-    .services-items {
-        text-align: left;
-        max-width: 800px;
-    }
-
-    .services-items p {
-        font-size: 20px;
-    }
-
-    .services-items a {
-        width: 50%;
-    }
-
-
-
-
-
-    .barbers-items {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .barbers-items div {
-        text-align: left;
-    }
-
-    .barbers {
-        max-width: 1500px;
+    .services-cards {
         margin: 0 auto;
-    }
-
-    .barbers-cards {
-        margin: 30px auto;
-        max-width: 1200px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 50px;
-    }
-
-
-    .galery {
-        max-width: 1500px;
-        margin: 0 auto;
-    }
-
-    .galery-pictures {
         width: 100%;
-        justify-content: center;
+    }
+    .nav-wrapper {
+        display: block;
+        margin: 50px auto;
         width: 100%;
-        
     }
 }
