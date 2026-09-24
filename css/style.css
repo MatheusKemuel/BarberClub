@@ -221,7 +221,7 @@ nav a {
 .hero-figure {
     width: 100%;
     position: relative;
-    height: 80vh;
+    height: 70vh;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -394,6 +394,7 @@ nav a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 50px;
 }
 
 .galery-bot a {
@@ -661,7 +662,7 @@ footer figure img {
     .hero-figure {
         width: 100%;
         position: relative;
-        height: 70vh;
+        height: 60vh;
         margin: 0 auto;
         display: flex;
         justify-content: center;
@@ -690,10 +691,13 @@ footer figure img {
 
 
 
+
+
     .services {
         flex-direction: row;
         max-width: 1500px;
-        margin: 50px auto;
+        margin: 30px auto;
+        align-items: start;
     }
 
     .services figure {
@@ -703,6 +707,7 @@ footer figure img {
     .services-items {
         text-align: left;
         max-width: 800px;
+        height: 100%;
     }
 
     .services-items p {
@@ -750,5 +755,11 @@ footer figure img {
         justify-content: center;
         width: 100%;
         
+    }
+}
+
+@media (min-width: 1235px) {
+     .services figure {
+        width: 70vw;
     }
 }
