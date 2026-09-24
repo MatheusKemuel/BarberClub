@@ -9,7 +9,7 @@
 }
 
 .elemento::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 
@@ -28,9 +28,6 @@ main {
     flex: 1;
 }
 
-a {
-    display: block;
-}
 
 
 
@@ -65,6 +62,15 @@ h3 {
     font-weight: 500;
 }
 
+a {
+    display: block;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
 .text-gold {
     color: var(--gold);
 }
@@ -83,6 +89,24 @@ h3 {
 
 .font-gray {
     color: var(--gray);
+}
+
+.before {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.before::before {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: var(--gold);
+    border-radius: 5px;
+}
+
+.font-title {
+    font-family: var(--font-title);
 }
 
 
@@ -217,290 +241,185 @@ nav a {
 /* //////////////////////BOTÃO////////////////////// */
 
 
-
-.hero-figure {
+.hero figure {
     width: 100%;
+    height: 60vh;
     position: relative;
-    height: 70vh;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
 }
 
-.hero-figure img {
+.hero figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transform: scaleX(-1);
 }
 
-.dark-overlay {
+.hero figure article {
     position: absolute;
-    inset: 0;
-    background: #000000;
-    background: linear-gradient(180deg, rgba(0, 0, 0, .8) 90%, rgba(255, 255, 255, 0) 100%);
-    height: 100%;
-    width: 100%;
-}
-
-.hero-figure article {
-    position: absolute;
-    text-align: center;
-    top: 20px;
+    top: 80px;
+    left: 100px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
+}
+
+.history {
+    max-width: 1700px;
+    margin: 50px auto;
     padding: 0 10px;
-    color: var(--text-2);
-    margin-top: 30px;
-}
-
-.hero-figure article h1 {
-    color: var(--white);
-}
-
-.hero-buttons {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-
-
-
-.services {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
-}
-
-.services figure {
-    width: 94vw;
-}
-
-.services figure img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.services-items {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
-}
-
-.text-icon {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    text-decoration: none;
-}
-
-.barbers {
-    padding: 0 10px;
-}
-
-.barbers-items {
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
-}
-
-.barbers-items a {
-    font-size: 24px;
-}
-
-
-.barbers-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    max-width: 350px;
-    margin: 30px auto 0 auto;
-}
-
-.card {
-    width: 100%;
-    background-color: var(--dark-gray);
-    border-radius: 5px;
-    padding: 0 0 15px 0;
-
-}
-
-.card-img {
-    width: 100%;
-    padding: 5px;
-}
-
-.card-img img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-}
-
-.card-items {
-    display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     gap: 10px;
-    padding: 0 15px;
 }
 
+.history-top {
+    max-width: 600px;
 
-.galery {
-    margin-top: 30px;
+}
+
+.history-top img {
     width: 100%;
+}
+
+.history-mid {
+    max-width: 500px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
 }
 
-.galery h2 {
-    margin-left: 15px;
-}
-
-.galery-pictures {
-    display: flex;
-    gap: 15px;
-    padding: 10px;
-    width: 100%;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
-}
-
-.galery-pictures img {
-    transition: .3s;
-}
-
-.galery-pictures img:hover {
-    scale: 1.1;
-}
-
-.galery-pictures::-webkit-scrollbar {
-    display: none;
-}
-
-.galery-bot {
+.history-bot {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+
+.history-bot article {
+    border: 1px solid var(--gray);
+    display: flex;
+    padding: 25px 50px;
+    border-radius: 5px;
+    gap: 20px;
     align-items: center;
-    justify-content: center;
-    height: 50px;
-}
-
-.galery-bot a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    text-decoration: none;
     transition: .3s;
+    cursor: default;
 
     &:hover {
-        gap: 10px;
+        scale: 1.1;
     }
 }
 
-.plans {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.history-bot article figure {
+    width: 60px;
+    height: 60px;
 }
 
-.plans-top {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-}
-
-.plans-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+.history-bot article figure img {
     width: 100%;
-    max-width: 1000px;
+    height: 100%;
+}
+
+
+
+.our-values {
+    max-width: 1700px;
     margin: 30px auto;
-}
-
-.plans-card {
+    padding: 0 10px;
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 250px;
-    min-height: 350px;
-    padding: 20px;
-    border: 1px solid var(--gray);
-    border-radius: 5px;
-    background-color: var(--dark-gray);
-    margin: 0 auto;
-}
-
-.card-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 10px;
 }
 
-.card-mid {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 30px;
-}
 
-.plan-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-}
 
-.plan-item svg {
-    flex-shrink: 0;
-}
 
-.card-bot {
-    width: 100%;
-    margin-top: auto;
-    padding-top: 30px;
-}
-
-.card-bot .btn {
-    display: block;
+.our-values-left {
     width: 100%;
 }
 
-.plans figure {
-    width: 95%;
-    height: 500px;
-    margin: 0 auto;
+.our-values figure {
+    width: 100%;
+    height: 300px;
 }
 
-.plans figure img {
+.our-values figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+.values-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    padding: 30px 20px;
+}
+
+.values-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: default;
+    transition: .3s;
+
+    &:hover {
+        scale: 1.1;
+    }
+}
+
+
+
+
+.values-card img {
+    width: 40px;
+    height: 40px;
+}
+
+.bottom-section {
+    position: relative;
+    z-index: 1;
+    height: 350px;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.bottom-section::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("/assets/images/yearone-2y4qGxu-4Do-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: .3;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.bottom-section article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    gap: 20px;
+    text-align: center;
+}
 
 
 
 
 
-/* /////////////////////////FOOTER/////////////////////////// */
+
+
+
+
+
+
+/* ////////////////////////////////////////FOOTER//////////////////////////////////////// */
 footer {
     width: 100%;
     background-color: var(--dark-gray);
@@ -509,7 +428,6 @@ footer {
     align-items: center;
     gap: 30px;
     padding: 20px 10px;
-    
 }
 
 footer figure {
@@ -527,7 +445,7 @@ footer figure img {
     align-items: center;
     gap: 30px;
     margin-top: 30px;
-    
+
 }
 
 .footer-links a {
@@ -564,32 +482,57 @@ footer figure img {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    
+
 }
 
-.footer-bot p{
+.footer-bot p {
     color: var(--gray);
 }
 
+/* ////////////////////////////////////////FOOTER//////////////////////////////////////// */
 
 
 
 
 
 
+@media (max-width: 768px) {
+    .hero figure article {
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding: 0 10px;
+    }
 
+    .hero figure article h1 {
+        font-size: 36px;
+    }
 
+    .hero figure article p {
+        font: 16px;
+    }
 
+    .history {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
 
+    .values-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
-
-
-
-
-
-
-
-
+@media (max-width: 400px) {
+    .values-cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
 
 @media (min-width: 1024px) {
     .header-bot {
@@ -659,107 +602,20 @@ footer figure img {
         justify-content: space-between;
     }
 
-    .hero-figure {
-        width: 100%;
-        position: relative;
-        height: 60vh;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-    }
+}
 
-    .hero-figure article {
-        position: absolute;
-        text-align: left;
-        top: 100px;
-        left: 170px;
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        padding: 0 10px;
-        color: var(--text-2);
-        margin-top: 30px;
-    }
-
-    .hero-figure article h1 {
-        font-size: 96px;
-    }
-
-    .hero-buttons {
-        flex-direction: row;
-    }
-
-
-
-
-
-    .services {
-        flex-direction: row;
-        max-width: 1500px;
-        margin: 30px auto;
-        align-items: start;
-    }
-
-    .services figure {
-        max-width: 800px;
-    }
-
-    .services-items {
-        text-align: left;
-        max-width: 800px;
-        height: 100%;
-    }
-
-    .services-items p {
-        font-size: 20px;
-    }
-
-    .services-items a {
-        width: 50%;
-    }
-
-
-
-
-
-    .barbers-items {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .barbers-items div {
-        text-align: left;
-    }
-
-    .barbers {
-        max-width: 1500px;
-        margin: 0 auto;
-    }
-
-    .barbers-cards {
-        margin: 30px auto;
-        max-width: 1200px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 50px;
-    }
-
-
-    .galery {
-        max-width: 1500px;
-        margin: 0 auto;
-    }
-
-    .galery-pictures {
-        width: 100%;
-        justify-content: center;
-        width: 100%;
-        
+@media (max-width: 1024px) {
+    .our-values figure {
+        display: none;
     }
 }
 
-@media (min-width: 1235px) {
-     .services figure {
-        width: 70vw;
+@media (max-width:1200px) {
+    .history-top {
+        display: none;
+    }
+
+    .history {
+        justify-content: center;
     }
 }
