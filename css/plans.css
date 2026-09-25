@@ -254,6 +254,7 @@ nav a {
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
     max-width: 1300px;
+    place-items: center;
 }
 
 .plans-cards article {
@@ -266,6 +267,8 @@ nav a {
     max-width: 300px;
     height: 470px;
     margin: 0 auto;
+    
+    
 }
 
 .benefits {
@@ -281,8 +284,9 @@ nav a {
     align-items: center;
 }
 
-.premium {
+.plans-cards .premium {
     border: 1px solid var(--gold);
+    height: 500px;
 }
 
 

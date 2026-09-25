@@ -302,7 +302,7 @@ nav a {
     width: 400px;
     position: sticky;
     height: 100%;
-    top: 100px;
+    top: 20px;
 }
 
 .services-menu ul {
@@ -322,7 +322,7 @@ nav a {
 }
 
 .services-cards {
-    width: 50%;
+    width: 70%;
 }
 
 
