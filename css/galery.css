@@ -272,12 +272,6 @@ nav a {
     height: 100%;
     object-fit: cover;
     transition: .3s;
-
-    &:hover {
-        scale: 1.1;
-        border: 1px solid var(--gold);
-        border-radius: 5px;
-    }
 }
 
 .section-2 {

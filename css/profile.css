@@ -318,6 +318,9 @@ body:not(:has(.profile-hero:target)) #brb-rafael {
 .especialidades-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    gap: 30px;
+    width: 100%;
 }
 
 .especialidades-card {
@@ -472,7 +475,58 @@ footer figure img {
 
 
 
+@media (max-width: 1024px) {
+    .especialidades {
+         margin: 0 15px;
+    }
 
+    .especialidades-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .especialidades-card {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .profile-hero {
+        flex-direction: column;
+        margin: 0 15px;
+    }
+
+
+    .profile-hero figure {
+        width: 100%;
+        height: 500px;
+    }
+
+    .profile-hero figure img {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .hero-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 850px) {
+    .hero-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 550px) {
+     .especialidades-cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+}
 
 
 

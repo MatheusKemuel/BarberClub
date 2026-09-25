@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/booking-form.css">
-    <title>BarberClub - Agendamento</title>
+    <link rel="stylesheet" href="../css/plans.css">
+    <title>BarberClub - Planos / Mensalidades</title>
 </head>
 
 <body>
-
     <header>
         <div class="header-top">
             <p>Nos chame no Whatsapp - (99) 99999-9999</p>
@@ -54,160 +53,128 @@
     </header>
 
     <main>
-
-        <section class="hero">
-            <figure class="hero-figure">
-                <div class="dark-overlay"></div>
-                <img src="../assets/images/barbearia-hero-home.jpg" alt="">
-                <article>
-                    <p class="text-gold descricoes before">AGENDAMENTO</p>
-                    <h1>Quase lá!<br> Complete <span class="font-title text-gold">seus dados</span></h1>
-                    <p>Preencha as informações abaixo para confirmar seu agendamento de forma rápida e segura.</p>
-                </article>
-            </figure>
+        <section class="plans-texts">
+            <p class="text-gold descricoes before">Planos</p>
+            <h1>Mais estilos, <span class="text-gold font-title">todo mês.</span></h1>
+            <p>Escolha o plano ideal para você e mantenha seu visual sempre em dia, com praticidade, economia e
+                atendimento de alto nível.</p>
         </section>
 
-        <section class="section-form">
-            <form class="form">
-                <div class="your-data-header">
-                    <img src="../assets/icons/user.svg" alt="">
-                    <div>
-                        <p class="descricoes">Seus dados</p>
-                        <p class="font-gray">Informe suas informações pessoais.</p>
+        <section class="plans-cards">
+            <article>
+                <p class="text-gold">ESSENCIAL</p>
+                <h2 class="">RS99<span class="font-gray descricoes">/mês</span></h2>
+                <p>O cuidado essencial para o seu dia a dia.</p>
+                <div class="benefits">
+                    <div class="benefit">
+                        <img src="../assets/icons/small-circle-check.svg" alt="">
+                        <p>1 cortes por mês</p>
+                    </div>
+                    <div class="benefit">
+                        <img src="../assets/icons/small-circle-check.svg" alt="">
+                        <p>1 barba por mês</p>
+                    </div>
+                    <div class="benefit">
+                        <img src="../assets/icons/small-circle-check.svg" alt="">
+                        <p>10% de descontos em serviços extras</p>
                     </div>
                 </div>
                 <div>
-                    <div class="input-wrapper">
-                        <label for="name" class="descricoes">Nome completo<span class="text-gold">*</span></label>
-                        <input type="text" name="" id="name" placeholder="Digite seu nome">
+                    <a href="" class="btn">Assinar plano</a>
+                </div>
+            </article>
+
+
+            <article class="premium">
+                <p class="text-gold">PREMIUM</p>
+                <h2 class="">RS139<span class="font-gray descricoes">/mês</span></h2>
+                <p>O equilibrio perfeito entre estilo e economia.</p>
+                <div class="benefits">
+                    <div class="benefit">
+                        <img src="../assets/icons/small-circle-check.svg" alt="">
+                        <p>2 cortes por mês</p>
                     </div>
-                    <div class="">
-                        <div class="input-wrapper">
-                            <label for="phone" class="descricoes">Telefone / Whatsapp<span
-                                    class="text-gold">*</span></label>
-                            <input type="number" name="" id="phone" placeholder="(xx) xxxxx-xxxx">
-                        </div>
-                        <div class="input-wrapper">
-                            <label for="email" class="descricoes">E-mail<span class="text-gold">*</span></label>
-                            <input type="email" name="" id="email" placeholder="exemplo@email.com">
-                        </div>
+                    <div class="benefit">
+                        <img src="../assets/icons/small-circle-check.svg" alt="">
+                        <p>2 barba por mês</p>
+                    </div>
+                    <div class="benefit">
+                        <img src="../assets/icons/small-circle-check.svg" alt="">
+                        <p>Sobrancelha grátis</p>
+                    </div>
+                    <div class="benefit">
+                        <img src="../assets/icons/small-circle-check.svg" alt="">
+                        <p>15% de descontos em serviços extras</p>
                     </div>
                 </div>
-
-
-                <div class="your-data-header">
-                    <img src="../assets/icons/calendar-week.svg" alt="">
-                    <div>
-                        <p class="descricoes">Data e horário</p>
-                        <p class="font-gray">Escolha a data e o horário que melhor te atende. </p>
-                    </div>
-                </div>
-
-                <div class="">
-                    <div class="input-wrapper">
-                        <label for="date" class="descricoes">Data<span class="text-gold">*</span></label>
-                        <input type="date" name="" id="date" placeholder="xx/xx/xxxx">
-                    </div>
-                    <div class="input-wrapper">
-                        <label for="time" class="descricoes">Horário<span class="text-gold">*</span></label>
-                        <input type="time" name="" id="time">
-                    </div>
-                </div>
-
-
-                <div class="your-data-header">
-                    <img src="../assets/icons/tabler-icon-brand-line.svg" alt="">
-                    <div>
-                        <p class="descricoes">Observações (opcional)</p>
-                        <p class="font-gray">Tem alguma preferência ou observação? Pode nos contar aqui.</p>
-                    </div>
-                </div>
-
                 <div>
-                    <textarea name="" id="" cols="30" rows="12"
-                        placeholder="Ex: Tipo de corte, algum detalhe específico, etc."></textarea>
+                    <a href="" class="btn">Assinar plano</a>
                 </div>
+            </article>
 
-                <a href="./confirmation.html" class="btn">Confirmar agendamento</a>
-            </form>
-            <section class="right-section">
-                <article class="resumo">
-                    <div class="resumo-header">
-                        <p class="descricoes">Resumo do agendamento</p>
-                        <p class="font-gray">Confira os detalhes do seu horário</p>
-                    </div>
-                    <div class="resumo-service">
-                        <figure>
-                            <img src="../assets/images/haircut-1.jpg" alt="">
-                        </figure>
-                        <div>
-                            <p>Corte de cabelo</p>
-                            <p class="descricoes text-gold">R$ 50,00</p>
-                        </div>
-                    </div>
 
-                    <hr>
-
-                    <div class="resumo-barber">
-                        <figure>
-                            <img src="../assets/images/barber-6.jpg" alt="">
-                        </figure>
-                        <div>
-                            <p class="descricoes">Rodrigo Santos</p>
-                            <p class="font-gray">Barbeiro Sênior</p>
-                        </div>
+            <article>
+                <p class="text-gold">BLACK</p>
+                <h2 class="">RS199<span class="font-gray descricoes">/mês</span></h2>
+                <p>Máximo cuidado, todos os meses.</p>
+                <div class="benefits">
+                    <div class="benefit">
+                        <img src="../assets/icons/small-circle-check.svg" alt="">
+                        <p>4 cortes por mês</p>
                     </div>
-
-                    <div class="resumo-location">
-                        <figure>
-                            <img src="../assets/icons/map-pin.svg" alt="">
-                        </figure>
-                        <div>
-                            <p class="descricoes">Barber Club</p>
-                            <p class="font-gray">Av. das Palmeiras, 1234</p>
-                            <p class="font-gray">Centro, Rio de Janeiro - RJ</p>
-                        </div>
+                    <div class="benefit">
+                        <img src="../assets/icons/small-circle-check.svg" alt="">
+                        <p>4 barba por mês</p>
                     </div>
-                </article>
-                <article class="online-booking">
-                    <div class="your-data-header">
-                        <img src="../assets/icons/shield-check.svg" alt="">
-                        <div>
-                            <p class="descricoes">Por que agendar online?</p>
-                        </div>
+                    <div class="benefit">
+                        <img src="../assets/icons/small-circle-check.svg" alt="">
+                        <p>Sobrancelha grátis</p>
                     </div>
-
-                    <div class="online-booking-item">
-                        <figure>
-                            <img src="../assets/icons/clock.svg" alt="">
-                        </figure>
-                        <div>
-                            <p class="descricoes">Mais praticidade</p>
-                            <p class="font-gray">Escolha o melhor horário para você.</p>
-                        </div>
+                    <div class="benefit">
+                        <img src="../assets/icons/small-circle-check.svg" alt="">
+                        <p>Massagem capilar</p>
                     </div>
-                    <div class="online-booking-item">
-                        <figure>
-                            <img src="../assets/icons/calendar-week.svg" alt="">
-                        </figure>
-                        <div>
-                            <p class="descricoes">Confirmação imediata</p>
-                            <p class="font-gray">Seu horário garantido na hora.</p>
-                        </div>
+                    <div class="benefit">
+                        <img src="../assets/icons/small-circle-check.svg" alt="">
+                        <p>20% de descontos em serviços extras</p>
                     </div>
-                    <div class="online-booking-item">
-                        <figure>
-                            <img src="../assets/icons/tabler-icon-star.svg" alt="">
-                        </figure>
-                        <div>
-                            <p class="descricoes">Atendimento personalizado</p>
-                            <p class="font-gray">Com o profissional de sua escolha. </p>
-                        </div>
-                    </div>
-                </article>
-            </section>
+                </div>
+                <div>
+                    <a href="" class="btn">Assinar plano</a>
+                </div>
+            </article>
         </section>
 
+        <section class="bottom-section">
+            <article>
+                <img src="../assets/icons/tabler-icon-diamond.svg" alt="">
+                <div>
+                    <p class="">Atendimento</p>
+                    <p class="font-gray">personalizado</p>
+                </div>
+            </article>
+            <article>
+                <img src="../assets/icons/clock-large.svg" alt="">
+                <div>
+                    <p class="">Agende quando</p>
+                    <p class="font-gray">quiser</p>
+                </div>
+            </article>
+            <article>
+                <img src="../assets/icons/percentage.svg" alt="">
+                <div>
+                    <p class="">Descontos exclusivos</p>
+                    <p class="font-gray">nos serviços</p>
+                </div>
+            </article>
+            <article>
+                <img src="../assets/icons/tabler-icon-credit-card.svg" alt="">
+                <div>
+                    <p class="">Pagamento facilitado</p>
+                    <p class="font-gray">e seguro</p>
+                </div>
+            </article>
+        </section>
     </main>
 
     <footer>
@@ -258,8 +225,6 @@
             <p>&copy;2026 BarberClub. Todos os direitos reservados.</p>
         </div>
     </footer>
-
-
 </body>
 
 </html>
